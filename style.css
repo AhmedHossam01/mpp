@@ -11,6 +11,7 @@ body {
 
 .navbar {
   display: -webkit-box;
+  /* stylelint-disable-next-line */
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
@@ -39,7 +40,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   color: #172b4d;
 }
 
@@ -59,9 +60,9 @@ body {
 
 .header__icons {
   display: -webkit-box;
+  /* stylelint-disable-next-line */
   display: -ms-flexbox;
   display: flex;
   margin-top: 1rem;
   gap: 1.5rem;
 }
-/*# sourceMappingURL=style.css.map */
