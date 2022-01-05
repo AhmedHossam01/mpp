@@ -4,7 +4,7 @@
 
 > A personal portfolio project
 
-![screenshot](./app_screenshot.png)
+![screenshot](./project_screenshot.png)
 
 ## Built With
 
