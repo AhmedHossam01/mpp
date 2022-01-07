@@ -49,6 +49,10 @@ body {
   color: #172b4d;
 }
 
+.headline__title--half {
+  width: 50%;
+}
+
 .headline__text {
   color: #344563;
   margin-top: 1rem;

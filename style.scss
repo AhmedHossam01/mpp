@@ -46,6 +46,10 @@ body {
     line-height: 52px;
     letter-spacing: 0;
     color: #172b4d;
+
+    &--half {
+      width: 50%;
+    }
   }
 
   &__text {
