@@ -305,10 +305,18 @@ body {
   background-color: white;
   border: 0;
   outline: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 17;
+  line-height: 20px;
 }
 
 .textarea {
   height: 150px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 17;
+  line-height: 20px;
 }
 
 .contact-submit {
