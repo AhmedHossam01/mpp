@@ -322,3 +322,62 @@ body {
 .contact-submit {
   margin-top: 1rem;
 }
+
+@media screen and (min-width: 992px) {
+  .headline {
+    background: white url("images/header-shapes-desktop.svg");
+    padding: 12rem 8rem 8rem 8rem;
+  }
+
+  .headline__title {
+    width: 35%;
+  }
+
+  .headline__text {
+    width: 80%;
+  }
+
+  .works {
+    padding: 0 8rem;
+  }
+
+  .works__single {
+    flex-direction: row;
+  }
+
+  .works__single:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .works__single__holder {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  .about {
+    padding: 4rem 8rem 5rem;
+    display: flex;
+  }
+
+  .about__info {
+    width: 50%;
+  }
+
+  .about__categories {
+    width: 50%;
+  }
+
+  .about__categories__expand {
+    flex-direction: row;
+  }
+
+  .about__categories__expand__item {
+    flex-direction: column;
+  }
+
+  .contact .contact-content {
+    padding: 4rem 22rem 0px;
+  }
+}
