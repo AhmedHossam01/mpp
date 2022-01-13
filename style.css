@@ -127,6 +127,7 @@ body {
   gap: 0.8rem;
 }
 
+
 .works__single__tags__single {
   display: flex;
   flex-direction: row;
@@ -136,6 +137,11 @@ body {
   border-radius: 8px;
   color: #6070ff;
   font-size: 12px;
+  transition: background-color 1s;
+}
+
+.works__single__tags__single:hover {
+  background-color: #c1c1cf;
 }
 
 .works__single:not(:last-child) {
@@ -171,11 +177,13 @@ body {
   background-color: #6070ff;
   color: white;
   box-shadow: 0 8px 16px 0 #4053fc3d;
+  transform: scale(1.1);
 }
 
 .button:focus {
   color: white;
   background-color: #2230d2;
+  transform: scale(0.9);
 }
 
 .button:disabled {
