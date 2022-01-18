@@ -251,18 +251,19 @@
           <ul>
             <li>
               <label for="name">Your Name:</label>
-              <input name="name" placeholder="Type your name..." type="text" class="input" maxlength="30" required />
-            </li>
-
-            <li>
-              <label for="_replyto">Your Email:</label>
-              <input name="_replyto" placeholder="Type your email..." type="email" class="input" maxlength="30"
+              <input name="name" id="name" placeholder="Type your name..." type="text" class="input" maxlength="30"
                 required />
             </li>
 
             <li>
+              <label for="_replyto">Your Email:</label>
+              <input name="_replyto" id="_replyto" placeholder="Type your email..." type="email" class="input"
+                maxlength="30" required />
+            </li>
+
+            <li>
               <label for="message">Messages:</label>
-              <textarea required name="message" placeholder="Type your message here" class="input textarea"
+              <textarea id="message" required name="message" placeholder="Type your message here" class="input textarea"
                 maxlength="500"></textarea>
             </li>
 
