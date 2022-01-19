@@ -24,7 +24,7 @@ label {
 .navbar__logo {
   font-weight: 700;
   font-size: 18px;
-  color: #6070ff;
+  color: #4c5ace;
   text-decoration: none;
 }
 
@@ -123,7 +123,7 @@ label {
 }
 
 .works__single__details__single--light {
-  color: #7a869a;
+  color: #677283;
 }
 
 .works__single__tags {
@@ -138,7 +138,7 @@ label {
   padding: 4px 12px;
   background-color: #ebebff;
   border-radius: 8px;
-  color: #6070ff;
+  color: #4c5ace;
   font-size: 12px;
   transition: background-color 1s;
 }
@@ -159,7 +159,7 @@ label {
 }
 
 .button {
-  border: 1px solid #7f8cff;
+  border: 1px solid #606bc3;
   cursor: pointer;
   margin: 0;
   display: flex;
@@ -168,7 +168,7 @@ label {
   padding: 12px;
   border-radius: 8px;
   background-color: white;
-  color: #6070ff;
+  color: #4c5ace;
   font-size: 17px;
   letter-spacing: 3%;
   font-weight: 500;
@@ -177,7 +177,7 @@ label {
 }
 
 .button:hover {
-  background-color: #6070ff;
+  background-color: #4c5ace;
   color: white;
   box-shadow: 0 8px 16px 0 #4053fc3d;
   transform: scale(1.1);
@@ -257,7 +257,7 @@ label {
 }
 
 .contact .contact-wrapper {
-  background: #6070ff url("images/contact-form-shapes-mobile.svg");
+  background: #4c5ace url("images/contact-form-shapes-mobile.svg");
   background-size: cover;
   border-top-left-radius: 75px;
   position: relative;
@@ -446,7 +446,7 @@ label {
   }
 
   .contact .contact-wrapper {
-    background: #6070ff url("images/contact-form-desktop.svg");
+    background: #4c5ace url("images/contact-form-desktop.svg");
   }
 }
 
