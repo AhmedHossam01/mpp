@@ -14,7 +14,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Ahmed Hossam's Portfolio - Homepage</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
@@ -23,21 +23,21 @@
 
 <body>
   <header class="navbar">
-    <a href="#" class="navbar__logo">Ahmed</a>
+    <a href="./index.html" class="navbar__logo">Ahmed</a>
     <nav>
       <button class="navbar__hamburger">
-        <img src="images/Union.svg" alt="menu" />
+        <img src="images/Union.svg" alt="menu icon button" />
       </button>
 
       <ul class="navbar__menu">
         <li>
-          <a class="navbar__link" href="#">Portfolio</a>
+          <a class="navbar__link" href="#portfolio">Portfolio</a>
         </li>
         <li>
-          <a class="navbar__link" href="#">About</a>
+          <a class="navbar__link" href="#about">About</a>
         </li>
         <li>
-          <a class="navbar__link" href="#">Contact</a>
+          <a class="navbar__link" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
@@ -54,36 +54,36 @@
 
     <ul class="headline__icons">
       <li>
-        <a href="#">
-          <img src="./images/linkedin.svg" alt="linkedin" />
+        <a href="https://www.linkedin.com/u/ahmedhossam01/">
+          <img src="./images/linkedin.svg" alt="linkedin icon" />
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="./images/github.svg" alt="github" />
+        <a href="https://github.com/AhmedHossam01/">
+          <img src="./images/github.svg" alt="github icon" />
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="./images/twitter.svg" alt="twitter" />
+        <a href="http://twitter.com/">
+          <img src="./images/twitter.svg" alt="twitter icon" />
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="./images/medium.svg" alt="medium" />
+        <a href="https://medium.com">
+          <img src="./images/medium.svg" alt="medium icon" />
         </a>
       </li>
     </ul>
   </section>
 
-  <section class="works">
+  <section class="works" id="portfolio">
     <div class="works__single">
       <div class="works__single__img_container">
-        <img class="works__single__img" src="images/project2.png" alt="project 1" />
+        <img class="works__single__img" src="images/project2.png" alt="Multi-Post Stories" />
       </div>
 
       <div class="works__single__holder">
-        <h4 class="works__single__title">Multi-Post Stories</h4>
+        <h2 class="works__single__title">Multi-Post Stories</h2>
 
         <div class="works__single__details">
           <p class="works__single__details__single works__single__details__single--dark">
@@ -116,11 +116,11 @@
 
     <div class="works__single">
       <div class="works__single__img_container">
-        <img class="works__single__img" src="images/project1.png" alt="project 1" />
+        <img class="works__single__img" src="images/project1.png" alt="Tonic" />
       </div>
 
       <div class="works__single__holder">
-        <h4 class="works__single__title">Tonic</h4>
+        <h2 class="works__single__title">Tonic</h2>
 
         <div class="works__single__details">
           <p class="works__single__details__single works__single__details__single--dark">
@@ -152,7 +152,7 @@
     </div>
   </section>
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="about__info">
       <h2 class="headline__title headline__title--half">About Myself</h2>
       <p class="headline__text">
@@ -162,28 +162,20 @@
         me.
       </p>
 
-      <a href="#" class="headline__link">Let's connect</a>
+      <p class="headline__link">Let's connect</p>
 
       <ul class="headline__icons">
         <li>
-          <a href="#">
-            <img src="./images/linkedin.svg" alt="linkedin" />
-          </a>
+          <img src="./images/linkedin.svg" alt="linkedin icon" />
         </li>
         <li>
-          <a href="#">
-            <img src="./images/github.svg" alt="github" />
-          </a>
+          <img src="./images/github.svg" alt="github icon" />
         </li>
         <li>
-          <a href="#">
-            <img src="./images/twitter.svg" alt="twitter" />
-          </a>
+          <img src="./images/twitter.svg" alt="twitter icon" />
         </li>
         <li>
-          <a href="#">
-            <img src="./images/medium.svg" alt="medium" />
-          </a>
+          <img src="./images/medium.svg" alt="medium icon" />
         </li>
       </ul>
 
@@ -237,7 +229,7 @@
     </ul>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="contact-wrapper">
       <div class="contact-content">
         <h2>Contact me</h2>
@@ -250,16 +242,20 @@
         <form action="https://formspree.io/f/mrgjezqe" method="post" class="contact-form">
           <ul>
             <li>
-              <input name="name" placeholder="Type your name..." type="text" class="input" maxlength="30" required />
-            </li>
-
-            <li>
-              <input name="_replyto" placeholder="Type your email..." type="email" class="input" maxlength="30"
+              <label for="name">Your Name:</label>
+              <input name="name" id="name" placeholder="Type your name..." type="text" class="input" maxlength="30"
                 required />
             </li>
 
             <li>
-              <textarea required name="message" placeholder="Type your message here" class="input textarea"
+              <label for="_replyto">Your Email:</label>
+              <input name="_replyto" id="_replyto" placeholder="Type your email..." type="email" class="input"
+                maxlength="30" required />
+            </li>
+
+            <li>
+              <label for="message">Messages:</label>
+              <textarea id="message" required name="message" placeholder="Type your message here" class="input textarea"
                 maxlength="500"></textarea>
             </li>
 
