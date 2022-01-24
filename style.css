@@ -364,6 +364,15 @@ label {
   list-style-type: none;
 }
 
+#closing_btn {
+  display: none;
+}
+
+.navbar__menu--open #closing_btn {
+  display: block;
+  align-self: flex-end;
+}
+
 .navbar__menu--open .navbar__link {
   color: white;
   font-size: 32px;
