@@ -10,6 +10,8 @@ buttonMobile.addEventListener("click", toggleMenu);
 closingButton.addEventListener("click", toggleMenu);
 
 document.querySelectorAll(".navbar__link").forEach((item) => {
+  const nav = document.getElementById("nav");
+
   item.addEventListener("click", () => {
     nav.classList.remove("navbar__menu--open");
   });
