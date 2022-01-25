@@ -63,19 +63,19 @@ function generateHTML(details) {
           <div class="works__single__tags">
           </div>
           <button id="${details.id}" class="button modal-open" data-modal="modal">See Project</button>
-          <script src="popup.js"></script>
+
 
           <div class="modal" id="modal">
             <div class="modal-content">
               <div class="modal-close">
-                <button class="modal-close"><img class="modal-close" src="./images/closing_btn.svg" alt="Closing Button" id="close"></button>
+                <button id="modal-close" class="modal-close"><img class="modal-close" src="./images/closing_btn.svg" alt="Closing Button" id="close"></button>
               </div>
               <div class="works__single__holder">
                 <h2 class="works__single__title">${details.title}</h2>
           
                 <div class="works__single__details">
                 <p class="works__single__details__single works__single__details__single--dark">
-                    ${details.company}
+                ${details.company}
                 </p>
                 <div class="dot"></div>
                 <p class="works__single__details__single works__single__details__single--light">
