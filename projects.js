@@ -9,6 +9,8 @@ const projects = [
     languages: ["html", "css", "javascript"],
     imageUrl: "images/project1.png",
     id: "1",
+    live: ,
+    source: ,
   },
   {
     title: "Multi-Post Stories",
@@ -20,6 +22,9 @@ const projects = [
     languages: ["html", "css", "javascript"],
     imageUrl: "images/project2.png",
     id: "2",
+    techs: ,
+    live: ,
+    source: ,
   },
 ];
 
@@ -69,4 +74,12 @@ function generateHTML(details) {
       `;
 
   return template;
+
+  let btnPopup = document.querySelectorAll(".button");
+  let closePopup = document.getElementById("close-popup");
+
+  function popupHTML(details) {
+    <div></div>
+  }
+
 }
