@@ -9,8 +9,6 @@ const projects = [
     languages: ["html", "css", "javascript"],
     imageUrl: "images/project1.png",
     id: "1",
-    live: ,
-    source: ,
   },
   {
     title: "Multi-Post Stories",
@@ -21,10 +19,7 @@ const projects = [
     body: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     languages: ["html", "css", "javascript"],
     imageUrl: "images/project2.png",
-    id: "2",
-    techs: ,
-    live: ,
-    source: ,
+    id: "2"
   },
 ];
 
@@ -40,46 +35,69 @@ projects.map((project) => {
 function generateHTML(details) {
   let template = `
       <div class="works__single">
-      <div class="works__single__img_container">
-        <img class="works__single__img" src="${details.imageUrl}" alt="${details.title}" />
-      </div>
-      
-      <div class="works__single__holder">
-        <h2 class="works__single__title">${details.title}</h2>
-      
-        <div class="works__single__details">
-          <p class="works__single__details__single works__single__details__single--dark">
-            ${details.company}
-          </p>
-          <div class="dot"></div>
-          <p class="works__single__details__single works__single__details__single--light">
-            ${details.position}
-          </p>
-          <div class="dot"></div>
-          <p class="works__single__details__single works__single__details__single--light">
-            ${details.date}
-          </p>
+        <div class="works__single__img_container">
+          <img class="works__single__img" src="${details.imageUrl}" alt="${details.title}" />
         </div>
       
-        <p>
-         ${details.desc}
-        </p>
-      
-        <div class="works__single__tags">
+        <div class="works__single__holder">
+          <h2 class="works__single__title">${details.title}</h2>
+        
+          <div class="works__single__details">
+            <p class="works__single__details__single works__single__details__single--dark">
+              ${details.company}
+            </p>
+            <div class="dot"></div>
+            <p class="works__single__details__single works__single__details__single--light">
+              ${details.position}
+            </p>
+            <div class="dot"></div>
+            <p class="works__single__details__single works__single__details__single--light">
+              ${details.date}
+            </p>
+          </div>
+        
+          <p>
+          ${details.desc}
+          </p>
+        
+          <div class="works__single__tags">
+          </div>
+          <button id="${details.id}" class="button modal-open" data-modal="modal">See Project</button>
+          <script src="popup.js"></script>
+
+          <div class="modal" id="modal">
+            <div class="modal-content">
+              <div class="modal-close">
+                <button class="modal-close">Close</button>
+              </div>
+              <div class="works__single__details">
+                <p class="works__single__details__single works__single__details__single--dark">
+                  ${details.company}
+                </p>
+                <div class="dot">
+                </div>
+                <p class="works__single__details__single works__single__details__single--light">
+                ${details.position}
+                </p>
+                <div class="dot"></div>
+                <p class="works__single__details__single works__single__details__single--light">
+                  ${details.date}
+                </p>
+              </div>
+              <div class="works__single__img_container">
+                <img class="works__single__img" src="${details.imageUrl}" alt="${details.title}" />
+              </div>
+              <div>
+                <p>"${details.body}"</p>
+              </div>
+              <div class="works__single__tags">
+                tags
+              </div>
+            </div>
+          </div>
         </div>
-      <script src="./popup.js"></script>
-        <button id="btn-${details.id}" class="button">See Project</button>
-      </div>
       </div>
       `;
 
   return template;
-
-  let btnPopup = document.querySelectorAll(".button");
-  let closePopup = document.getElementById("close-popup");
-
-  function popupHTML(details) {
-    <div></div>
-  }
-
 }

@@ -1,15 +1,23 @@
-const closingButton = document.getElementById("close-popup");
+const modalBtns = document.querySelectorAll(".modal-open")
 
-function generatePopup(details) {
-  let template = `
-      <div class="popup">
-      
-      </div>
-      `;
-  return template;
+modalBtns.forEach(function(btn) {
+  btn.onclick = function() {
+    let modal = btn.getAttribute("data-modal");
 
-    
-    
-    closingButton.addEventListener("click", generatePopup);
+    document.getElementById(modal).style.display = "block";
+  };
+});
 
-}
+const closeBtns = document.querySelectorAll('.modal-close');
+
+closeBtns.forEach(function(btn){
+  btn.onclick = function() {
+    let modal = btn.closest(".modal").style.display = 'none';
+  }
+});
+
+window.onclick = function(e) {
+  if (e.target.className === "modal") {
+    e.target.style.display = "none";
+  }
+};
