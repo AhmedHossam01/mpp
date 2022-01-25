@@ -89,6 +89,7 @@ label {
 .works__single {
   background-color: white;
   border-radius: 16px;
+  margin-top: 3rem;
   padding: 1rem;
   border: 1px solid #dfe1e6;
   display: flex;
