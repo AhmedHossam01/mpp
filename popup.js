@@ -12,7 +12,7 @@ let closeBtns = document.querySelectorAll('.modal-close');
 
 closeBtns.forEach(function(btn) {
   btn.onclick = function() {
-    let modal = btn.closest(".modal").style.display = 'none';
+    let modal = (btn.closest(".modal").style.display = "none");
   }
 });
 

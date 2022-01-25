@@ -111,3 +111,4 @@ function generateHTML(details) {
 
   return template;
 }
+
