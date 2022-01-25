@@ -68,7 +68,7 @@ function generateHTML(details) {
           <div class="modal" id="modal">
             <div class="modal-content">
               <div class="modal-close">
-                <button class="modal-close"><img src="./images/closing_btn.svg" alt="Closing Button" id="close"></button>
+                <button class="modal-close"><img class="modal-close" src="./images/closing_btn.svg" alt="Closing Button" id="close"></button>
               </div>
               <div class="works__single__holder">
                 <h2 class="works__single__title">${details.title}</h2>
