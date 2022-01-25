@@ -400,13 +400,14 @@ label {
   background: rgba(0, 0, 0, 0.5);
   z-index: 2;
   display: none;
+  overflow: auto;
 }
 
 .modal-content {
   background: #fff;
   margin-top: 100px;
   width: 90%;
-  height: 100vh;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   padding: 8px 24px;
@@ -431,9 +432,8 @@ label {
 .modal-links {
   display: flex;
   justify-content: space-between;
-  padding: 10px
+  padding: 10px;
 }
-
 
 @media screen and (min-width: 992px) {
   .works__single__img_container {
@@ -520,6 +520,15 @@ label {
 
   .contact .contact-wrapper {
     background: #4c5ace url("images/contact-form-desktop.svg");
+  }
+
+  .modal-content .works__single__img_container {
+    width: 100%;
+    height: 400px;
+  }
+
+  .modal-content img {
+    object-fit: cover;
   }
 }
 
