@@ -414,8 +414,21 @@ label {
 }
 
 .modal-close {
-  float: right;
+  position: absolute;
+  right: 20px;
   font-size: 25px;
+}
+
+.hr {
+  width: 100%;
+  padding-bottom: 25px;
+  border-bottom: gray solid 1px;
+}
+
+.modal-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px
 }
 
 
