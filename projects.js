@@ -19,7 +19,7 @@ const projects = [
     body: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
     languages: ["html", "css", "javascript"],
     imageUrl: "images/project2.png",
-    id: "2"
+    id: "2",
   },
 ];
 
@@ -62,10 +62,10 @@ function generateHTML(details) {
         
           <div class="works__single__tags">
           </div>
-          <button id="${details.id}" class="button modal-open" data-modal="modal">See Project</button>
+          <button id="${details.id}" class="button modal-open" data-modal="modal-${details.id}">See Project</button>
 
 
-          <div class="modal" id="modal">
+          <div class="modal" id="modal-${details.id}">
             <div class="modal-content">
               <div class="modal-close">
                 <button id="modal-close" class="modal-close"><img class="modal-close" src="./images/closing_btn.svg" alt="Closing Button" id="close"></button>
@@ -111,4 +111,3 @@ function generateHTML(details) {
 
   return template;
 }
-
