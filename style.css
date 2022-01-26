@@ -533,6 +533,18 @@ label {
   }
 }
 
+.error-message {
+  color: red;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
 @keyframes textAnimation {
   from {
     margin-left: -100%;
