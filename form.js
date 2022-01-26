@@ -11,5 +11,6 @@ form.addEventListener("submit", (e) => {
     errorMessage.classList.replace("d-none", "d-block");
   } else {
     errorMessage.classList.replace("d-block", "d-none");
+    form.submit();
   }
 });
