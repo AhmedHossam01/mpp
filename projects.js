@@ -1,6 +1,6 @@
 const projects = [
   {
-    title: "Multi-Post Stories",
+    title: "Tonic",
     company: "CANPOY",
     position: "Back End Dev",
     date: "2015",
@@ -21,13 +21,34 @@ const projects = [
     imageUrl: "images/project2.png",
     id: "2",
   },
+  {
+    title: "Tonic",
+    company: "Tonic",
+    position: "Back End Dev",
+    date: "2015",
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    body: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    languages: ["html", "css", "javascript"],
+    imageUrl: "images/project3.png",
+    id: "3",
+  },
+  {
+    title: "Multi-Post Stories",
+    company: "Tonic",
+    position: "Back End Dev",
+    date: "2015",
+    desc: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    body: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    languages: ["html", "css", "javascript"],
+    imageUrl: "images/project4.png",
+    id: "4",
+  },
 ];
 
 let portfolioSection = document.getElementById("portfolio");
 
 function generateHTML(details) {
   let template = `
-      <div class="works__single">
         <div class="works__single__img_container">
           <img class="works__single__img" src="${details.imageUrl}" alt="${details.title}" />
         </div>
@@ -99,7 +120,6 @@ function generateHTML(details) {
             </div>
           </div>
         </div>
-      </div>
       `;
 
   return template;
@@ -107,6 +127,7 @@ function generateHTML(details) {
 
 projects.forEach((project) => {
   let HTMLElement = document.createElement("div");
+  HTMLElement.classList.add("works__single");
   HTMLElement.innerHTML = generateHTML(project);
 
   portfolioSection.appendChild(HTMLElement);
