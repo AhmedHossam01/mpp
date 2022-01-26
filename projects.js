@@ -25,13 +25,6 @@ const projects = [
 
 let portfolioSection = document.getElementById("portfolio");
 
-projects.map((project) => {
-  let HTMLElement = document.createElement("div");
-  HTMLElement.innerHTML = generateHTML(project);
-
-  portfolioSection.appendChild(HTMLElement);
-});
-
 function generateHTML(details) {
   let template = `
       <div class="works__single">
@@ -111,3 +104,10 @@ function generateHTML(details) {
 
   return template;
 }
+
+projects.forEach((project) => {
+  let HTMLElement = document.createElement("div");
+  HTMLElement.innerHTML = generateHTML(project);
+
+  portfolioSection.appendChild(HTMLElement);
+});
